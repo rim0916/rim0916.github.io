@@ -622,3 +622,57 @@ a {
     height: auto; 
     align-self: center;
 }
+
+/* 테이블 스타일 수상내역 */
+.award-item-table {
+    display: table;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.award-title-table {
+    display: table-cell;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    width: 70%;
+    vertical-align: middle;
+    line-height: 1.4;
+}
+
+.award-info-table {
+    display: table-cell;
+    text-align: right;
+    color: #666;
+    font-size: 14px;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.award-date {
+    display: inline;
+}
+
+.award-organization {
+    display: inline;
+    font-style: italic;
+}
+
+/* 반응형 처리 */
+@media (max-width: 768px) {
+    .award-item-table {
+        display: block;
+        padding: 15px 0;
+    }
+    
+    .award-title-table,
+    .award-info-table {
+        display: block;
+        width: 100%;
+    }
+    
+    .award-info-table {
+        text-align: left;
+        margin-top: 8px;
+    }
+}
