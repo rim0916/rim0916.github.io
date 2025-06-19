@@ -1,24 +1,302 @@
----
-layout: default
----
+<html lang="en">
 
+<!-- head -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jiye Lee | Academic Website</title>
 
-{% include career-profile.html %}
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Noto+Sans+KR' rel='stylesheet' type='text/css'> -->
+    <link rel="icon" type="image/png" href="images/profile2.jpg">
 
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jiyewise.github.io">
+    <meta property="og:title" content="Jiye Lee">
+    <meta property="og:image" content="/images/main_image.jpg">
+    <meta property="og:description" content="Jiye is a CS MS/PhD student at Seoul National University">
+    <meta property="og:site_name" content="Jiye Lee | Academic Website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:type" content="image/jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+   
+    <!-- tag -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-38M7P285JP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-{% include experiences.html %}
+    gtag('config', 'G-38M7P285JP');
+    </script>
+</head>
 
-{% include certifications.html %}
+<!-- body -->
+<body>
+    <header class="site-header" role="banner">
+        <div class="site-wrapper nav-wrapper">
+            <nav>
+                <a href="#intro" title="Home">
+                  <div class="nav-button" id="home-button">About</div>
+                </a>
+                <a href="#publications" title="pub">
+                    <div class="nav-button" id="pub-button">Publications</div>
+                </a>
+                <!-- <a href="files/CV_Jiye_Lee.pdf" title="CV">
+                    <div class="nav-button">CV</div>
+                </a> -->
+                <!-- <a href="https://twitter.com/jiyewise" title="twitter">
+                    <div class="nav-button">Twitter</div>
+                </a> -->
+              </nav>
+            </div>
+        </div>
+    </header>
 
-{% include projects.html %}
+    <main class="page-content">
+        <div class="home-wrapper">
+            <!-- intro grid -->
+            <div class="intro-wrapper">
+                <!-- <div id="image-wrapper">
+                    <img id="profile" src="./images/IMG_0515.JPG">
+                </div> -->
+                <div style="margin-top: 15px;">
+                    <div id="intro">
+                        <!-- Title -->
+                        <p style="font-weight: 600; font-size: 32px; margin-bottom: 0.1em; margin-top: 0px;">Jiye Lee</p>
+                        <!-- <div id="subtitle" style="font-weight: 300; font-size: 15px; margin-top: 0px; letter-spacing: -0.01cm;">Researcher in Training.</div> -->
+                        <!-- introduction -->
+                         <p style="margin-bottom: 10px; font-size: 15px;">Hi, I'm Jiye Lee. I'm a PhD candidate at Seoul National University.
+                            I am a member of <a href="https://sites.google.com/view/snuimo/home">SNU Intelligent Motion Lab</a>, advised by <a href="https://sites.google.com/view/jungdam/home">Prof. Jungdam Won</a>.
+                            <br/>
+                            <br/>
+                            Previously, I was advised by <a href="https://jhugestar.github.io">Prof. Hanbyul Joo</a> in the early stage of my PhD.
+                            I was also fortunate to visit <a href="https://about.meta.com/realitylabs/">Meta Reality Labs</a> (Codec Avatars) as a Research Scientist Intern in 2024.
+                        </p>
+                        <!-- personal -->
+                        <!-- <p style="margin-top:10px; margin-bottom: 10px;"> Outside of research, I like to spend my time listening to music, reading, taking pictures, and drawing. </p> -->
+                        <div class="profile-button-wrapper" style="margin-top:15px; margin-bottom: 10px;">
+                                <a href="./files/CV_Jiye_public.pdf">
+                                <button class="profile-button">
+                                        CV
+                                </button> 
+                                </a> &nbsp;
+                                <a href="https://scholar.google.com/citations?user=4dUHiQoAAAAJ">
+                                <button class="profile-button">
+                                        Google Scholar
+                                </button> 
+                                </a> &nbsp;
+                                <a href="#footer-contact">
+                                <button class="profile-button">
+                                        Contact
+                                </button> 
+                                </a> &nbsp;
+                            </div>
+                    </div>
+                </div>
+                <div id="image-wrapper">
+                    <img id="profile" src="./images/Jiye_202407.png">
+                </div>
+            </div>
+            <!-- research interests -->
+            <div class="section-wrapper">
+                <div class="section-title" id="research-interest">
+                    RESEARCH INTERESTS
+                </div>
+                <div class="section-content" id="research-interest" style="color: #444552">
+                    <p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.6;"> 
+                        <!-- I focus on <b>control virtual avatars to demonstrate human-like movements from various levels of world perceptions</b>. -->
+                        I focus on <b>understanding and reconstructing human movements from various levels of world perceptions</b>.
+                        This involves interpreting human motions from visual or wearable sensors (sensory perception) and synthesizing realistic and diverse human-scene interactions (virtual perception of the environment).
+                    </p>
+                </div>
+            </div>
+            <!-- news -->
+            <div class="section-wrapper" id="update-section-wrapper">
+                <div class="section-title" id="updates">
+                    UPDATES
+                </div>
+                <div class="update-container">
+                    <div class="update-item">
+                        <div class="update-item-wrapper">
+                            <div class="update-date"><b>Feb 2024</b></div>
+                            <div class="update-title">One first-author paper is accepted to CVPR 2024. See you in Seattle!
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="update-item">
+                        <div class="update-item-wrapper">
+                            <div class="update-date"><b>Jan 2024</b></div>
+                            <div class="update-title">I will join Codec Avatars Lab at Meta as a research scientist intern this summer.
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="update-item">
+                        <div class="update-item-wrapper">
+                            <div class="update-date"><b>Jul 2023</b></div>
+                            <div class="update-title">One first-author paper is accepted to ICCV 2023.
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- <div class="update-item">
+                        <div class="update-item-wrapper">
+                            <div class="update-date"><b>Sep 2022</b></div>
+                            <div class="update-title">📝 Our paper <a>Chimera</a> lead by <a>Seyoung Lee</a> is accepted to SIGGRAPH Asia 2022.
+                            </div>
+                        </div>
+                    </div>  -->
+                    <!-- <div class="update-item">
+                        <div class="update-item-wrapper">
+                            <div class="update-date">Feb 2022 </div>
+                            <div class="update-title"> 👋 Joined <a href="https://jhugestar.github.io">SNU Visual Computing Lab</a>
+                            </div>
+                        </div>
+                    </div>  -->
+                    <!-- <div class="update-item">
+                        <div class="update-item-wrapper">
+                            <div class="update-date">Sep 2021 </div>
+                            <div class="update-title"> 🦾 Started my CSE MS/PhD course at <a href="https://mrl.snu.ac.kr">SNU Movement Research Lab</a>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <div class="update-item-wrapper">
+                            <div class="update-date"> Aug 2021 </div>
+                            <div class="update-title"> 🎓 Got my Bachelor's degree in Chemistry & Computer Science and Engineering at Seoul National University.
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="update-item">
+                        <div class="update-item-wrapper">
+                            <div class="update-date"> Aug 2021 </div>
+                            <div class="update-title">  👩‍🎓 Honored to be selected as valedictorian in College of Liberal Studies!
+                            </div>
+                        </div>
+                    </div> --> 
+                </div>
+            </div>
 
-{% include oss-contributions.html %}
+            <!-- publications -->
+            <div class="section-wrapper" id="pub-section-wrapper">
+                <div class="section-title" id="publications">
+                    PUBLICATIONS
+                </div>
+                <div class="pub-container">
+                    <div class="pub-item-wrapper">
+                        <div class="pub-fig-wrapper" id="mocap2robot">
+                            <img class="pubfigure" id="pubfigure-mocap2robot" src="./images/mocap2robot-teaser-pad.png">
+                        </div>
+                        <div class="pub-content-wrapper"></a>
+                            <div class="pub-title"><p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.4;"><b>Learning to Transfer Human Hand Skills for Robot Manipulations</b></p></div>
+                            <div class="pub-author"><p style="margin-top: 3px; margin-bottom: 0px; line-height: 1.5;">Sungjae Park*, Seungho Lee*, Mingi Choi*, <b>Jiye Lee</b>, Jeonghwan Kim, Jisoo Kim and Hanbyul Joo</p></div>
+                            <div class="pub-cite"><p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5;">CoRL X-Embodiment Workshop 2024 </p></div>
+                            <div class="pub-link"><a href="https://rureadyo.github.io/MocapRobot/">Project</a>&nbsp;&nbsp;<a href="https://arxiv.org/pdf/2501.04169">Paper</a></div>
+                        </div>
+                    </div>
+                    <div class="pub-item-wrapper">
+                        <div class="pub-fig-wrapper" id="mocapevery">
+                            <img class="pubfigure" id="pubfigure-mocapevery" src="./images/mocap_every_teaser.gif">
+                        </div>
+                        <div class="pub-content-wrapper"></a>
+                            <div class="pub-title"><p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.4;"><b>Mocap Everyone Everywhere: Lightweight Motion Capture With Smartwatches and a Head-Mounted Camera</b></p></div>
+                            <div class="pub-author"><p style="margin-top: 3px; margin-bottom: 0px; line-height: 1.5;"><b>Jiye Lee</b> and Hanbyul Joo</p></div>
+                            <div class="pub-cite"><p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5;">CVPR 2024 </p></div>
+                            <div class="pub-link"><a href="/projects/MocapEvery/">Project</a>&nbsp;&nbsp;<a href="https://arxiv.org/pdf/2401.00847">Paper</a>&nbsp;&nbsp;<a href="https://github.com/jiyewise/MocapEvery/">Code</a> </div>
+                        </div>
+                    </div>
+                    <div class="pub-item-wrapper">
+                        <div class="pub-fig-wrapper">
+                            <img class="pubfigure" id="pubfigure-lama" src="./images/lama-teaser2.png">
+                        </div>
+                        <div class="pub-content-wrapper"></a>
+                            <div class="pub-title"><p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.4;"><b>Locomotion-Action-Manipulation: Synthesizing Human-Scene Interactions in Complex 3D Environments</b></p></div>
+                            <div class="pub-author"><p style="margin-top: 3px; margin-bottom: 0px; line-height: 1.5;"><b>Jiye Lee</b> and Hanbyul Joo</p></div>
+                            <div class="pub-cite"><p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5;">ICCV 2023 </p></div>
+                            <div class="pub-link"><a href="/projects/LAMA/">Project</a>&nbsp;&nbsp;<a href="https://arxiv.org/pdf/2301.02667">Paper</a>&nbsp;&nbsp;<a href="https://github.com/jiyewise/LAMA/">Code</a> </div>
+                        </div>
+                    </div>
+                    <div class="pub-item-wrapper">
+                        <div class="pub-fig-wrapper">
+                            <img class="pubfigure" id="pubfigure-chimera" src="./images/chimera-teaser.jpg">
+                        </div>
+                        <div class="pub-content-wrapper"></a>
+                            <div class="pub-title"><p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.4;"><b>Learning Virtual Chimeras by Dynamic Motion Reassembly</b></p></div>
+                            <div class="pub-author"><p style="margin-top: 3px; margin-bottom: 0px; line-height: 1.5;">Seyoung Lee, <b>Jiye Lee</b> and Jehee Lee</p></div>
+                            <div class="pub-cite"><p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5;">ACM Transactions on Graphics (SIGGRAPH Asia 2022) </p></div>
+                            <div class="pub-link"><a href="https://mrl.snu.ac.kr/research/ProjectChimera/Chimera.html">Project</a>&nbsp;&nbsp;<a href="https://mrl.snu.ac.kr/research/ProjectChimera/Chimera.pdf">Paper</a>&nbsp;&nbsp;<a href="https://github.com/syleemrl/Chimera">Code</a> </div>
+                            <!-- <div class="pub-link"><a style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5;" href="https://mrl.snu.ac.kr/research/ProjectChimera/Chimera.html">Project Page</a></div> -->
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <!-- academic -->
+            <!-- academic services -->
+            <div class="section-wrapper" id="academic-section-wrapper">
+                <div class="section-title" id="academic">
+                    ACADEMIC SERVICES
+                </div>
+                <div class="aca-container">
+                    <div class="aca-columns">
+                        <div class="aca-column">
+                            <p class="aca-heading">Workshop Organizer</p>
+                            <ul class="aca-list">
+                                <li><a href="https://g3p-workshop.github.io">Global 3D Human Poses Workshop</a> (in conjunction with CVPR 2025)</li>
+                            </ul>
+                        </div>
+                        <br/>
+                        <div class="aca-column">
+                            <p class="aca-heading">Conference Reviewer</p>
+                            <ul class="aca-list">
+                                <li>2025: CVPR, ICCV, ICRA, 3DV, TVCG (Journal), NeurIPS, BMVC </li>
+                                <li>2024: CVPR, SIGGRAPH Asia, BMVC </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="aca-column">
+                            <p class="aca-heading">Student Volunteer</p>
+                            <ul class="aca-list">
+                                <li>Women In Computer Vision Workshop, ICCV 2023</li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>     
 
-{% include publications.html %}
+        </div>
+    </main>
 
-{% include recommendations.html %}
+    <footer class="site-footer">
+        <div class="site-wrapper">
+            <div class="footer" id="footer-contact">
+                <div class="footer-col">
+                    <ul class="contact-list">
+                        <li class="contact-me">CONTACT</li>
+                        <li>
+                            <a class="u-email" href="mailto:kay2353@snu.ac.kr">kay2353 (at) snu (dot) ac (dot) kr</a>
+                        </li>
+                        <li>
+                            <a class="u-email" href="mailto:jiyelee.wise@gmail.com">jiyelee (dot) wise (at) gmail (dot) com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="float: right;">
+                    <a href="https://twitter.com/jiyewise"><i class="fab fa-brands fa-twitter icon" style='font-size:27px;'></i></a>
+                    <a href="https://www.linkedin.com/in/jiye-lee-9ba4232ab/"><i class="fab fa-brands fa-linkedin icon" style="font-size:27px;"></i></a>
+                    <a href="https://github.com/jiyewise"><i class="fab fa-github icon" style='font-size:27px;'></i></a>
+                    <!-- <a href="https://instagram.com/jiyelee.artwork.archive/"><i class="fab fa-solid fa-palette icon" style='font-size:27px;'></i></a> -->
+                    <!-- <i class="fab fa-palette icon" style="font-size: 27px;"></i> -->
+                    <br/>
+                    <p style="margin:10 0 0 0; font-size: 15px;">Latest update: June 2025</p>
+                    <p style="margin:0 0; font-size:15px; ">© Jiye Lee</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-{% include skills.html %}
+<script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
+</body>
+
+</html>
