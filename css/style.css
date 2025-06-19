@@ -154,6 +154,7 @@ body {
         grid-template-columns: 200px auto;
         /* column-gap: 10px; */
         grid-template-rows: 1fr;
+        align-items: center;
         margin-bottom: 30px;
 
     }
@@ -606,4 +607,18 @@ a {
     font-size: 15px;
     color: #1e1e21;
     line-height: 1.5;
+}
+
+#cau_logo {
+    max-width: 120px; 
+    width: 140px;
+    height: auto; 
+    align-self: center;
+}
+
+#baekma_logo {
+    max-width: 120px; 
+    width: 140px;
+    height: auto; 
+    align-self: center;
 }
